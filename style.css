@@ -1,0 +1,113 @@
+html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  font-size: 0.9rem;
+  background-color: #f2ebe3;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif; }
+
+#main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.content {
+  border-radius: 0.5rem;
+  display: flex;
+  background-color: white;
+  width: 37.5rem;
+  height: 26.5rem; }
+  @media (max-width: 24rem) {
+    .content {
+      width: 90%;
+      height: 90%;
+      flex-direction: column; } }
+
+.product-image {
+  border-radius: 0.5rem;
+  width: 18.75rem;
+  height: 100%;
+  background: url("images/image-product-desktop.jpg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 24rem) {
+    .product-image {
+      background: url("images/image-product-mobile.jpg");
+      width: 100%;
+      height: 35%;
+      background-size: cover;
+      border-radius: 0.5rem 0 0 0; } }
+
+.product-description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 0rem; }
+  @media (max-width: 24rem) {
+    .product-description {
+      height: 65%;
+      width: 100%;
+      align-items: center; } }
+  .product-description div {
+    width: 77%; }
+    @media (max-width: 24rem) {
+      .product-description div {
+        width: 90%; } }
+  .product-description .brand-name {
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    color: #6c7289;
+    letter-spacing: 0.5rem; }
+  .product-description .brand-slogan {
+    color: black;
+    font-weight: 700;
+    font-size: 2rem; }
+  .product-description .brand-description {
+    color: #6c7289;
+    font-weight: 500; }
+  .product-description .brand-price {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; }
+    .product-description .brand-price .current {
+      color: #3c8067;
+      font-weight: bold;
+      font-size: 2rem; }
+      @media (max-width: 24rem) {
+        .product-description .brand-price .current {
+          text-align: center; } }
+    .product-description .brand-price .previous {
+      color: #6c7289;
+      text-decoration: line-through; }
+      @media (max-width: 24rem) {
+        .product-description .brand-price .previous {
+          text-align: center; } }
+  .product-description .purchase-button {
+    display: flex; }
+    .product-description .purchase-button a {
+      width: 100%;
+      text-decoration: none; }
+    .product-description .purchase-button button {
+      background-color: #3c8067;
+      width: 100%;
+      border: none;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+    .product-description .purchase-button :hover,
+    .product-description .purchase-button :active {
+      cursor: pointer;
+      background-color: #044704;
+      border-radius: 0.5rem; }
+
+/*# sourceMappingURL=style.css.map */
